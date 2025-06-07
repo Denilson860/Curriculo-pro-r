@@ -1,36 +1,19 @@
-
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const CurriculoProR());
-}
+void main() => runApp(CurriculoProR());
 
 class CurriculoProR extends StatelessWidget {
-  const CurriculoProR({super.key});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Currículo Pro-R',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.blue,
+        scaffoldBackgroundColor: Colors.grey[100],
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Currículo Pro-R'),
-      ),
-      body: const Center(
-        child: Text('Bem-vindo ao Criador de Currículos!'),
+      home: Scaffold(
+        appBar: AppBar(title: Text('Currículo Pro-R')),
+        body: Center(child: Text('Bem-vindo ao app Currículo Pro-R!')),
       ),
     );
   }
