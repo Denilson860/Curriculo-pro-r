@@ -1,1 +1,1 @@
-# android folder placeholder
+# ios folder placeholder
